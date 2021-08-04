@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* font */
+  --h1: 42px;
+  --h2: 36px;
+  --h3: 24px;
+  --h4: 16px;
+  --body-text: 14px;
+  --body-text-sm: 11px;
+  --btn-text: 16px;
+
+  /* font weight */
+  --fw-thin: 100;
+  --fw-extra-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+
+
+  /* icon */
+  --icon-sm: 18px;
+  --icon-md: 24px;
+  --icon-lg: 30px;
+  --icon-xl: 36px;
+  --icon-btn: 20px;
+
+  /* color */
+  --hue: 15;
+  --primary: hsl(var(--hue), 96%, 61%);
+  --primary-alt: hsl(var(--hue), 80%, 61%);
+  --primary-disabled: hsl(var(--hue), 50%, 80%);
+  --dark: hsl(0, 0%, 5%);
+  --light: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 80%);
+  --secondary-light: hsl(0, 0%, 90%);
+  --secondary-superlight: hsl(0, 0%, 98%);
+
+  /* shadow */
+  --shadow: rgba(0, 0, 0, 0.06);
+}
+
+/* ==================ICON STYLE=================== */
+.icon-sm {
+  font-size: var(--icon-sm);
+}
+
+.icon-md {
+  font-size: var(--icon-md);
+}
+
+.icon-lg {
+  font-size: var(--icon-lg);
+}
+
+.icon-xl {
+  font-size: var(--icon-xl);
+}
+
+
+/* ==================FONT STYLE=================== */
+.fw-thin {
+  font-weight: var(--fw-thin);
+}
+
+.fw-extra-light {
+  font-weight: var(--fw-extra-light);
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-extra-bold {
+  font-weight: var(--fw-extra-bold);
+}
+
+.fw-black {
+  font-weight: var(--fw-black);
+}
+
+.h1 {
+  font-size: var(--h1);
+  margin: 0;
+}
+
+.h2 {
+  font-size: var(--h2);
+  margin: 0;
+}
+
+.h3 {
+  font-size: var(--h3);
+  margin: 0;
+}
+
+.h4 {
+  font-size: var(--h4);
+  margin: 0;
+}
+
+.body-text {
+  font-size: var(--body-text);
+  color: var(--secondary);
+  margin: 0;
+}
+
+.body-text-sm {
+  font-size: var(--body-text-sm);
+  color: var(--secondary);
+  margin: 0;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+
+.text-light {
+  color: var(--light) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* ==================SHADOW STYLE=================== */
+.shadow {
+  box-shadow: 0 1rem 2rem var(--shadow);
+}
+
+/* ==================DISPLAY STYLE=================== */
+.d-flex {
+  display: flex;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.f-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-grid {
+  display: grid;
+}
+
+/* ==================BACKGROUND COLOR STYLE=================== */
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+/* ==================JUSTIFY STYLE=================== */
+.jc-center {
+  justify-content: center;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-evenly {
+  justify-content: space-evenly;
+}
+
+.js-center {
+  justify-self: center;
+}
+
+.js-start {
+  justify-self: flex-start;
+}
+
+.js-end {
+  justify-self: flex-end;
+}
+
+/* ==================ALIGN STYLE=================== */
+.ai-center {
+  align-items: center;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+/* ==================MARGIN STYLE=================== */
+.m-0 {
+  margin: 0;
+}
+
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.mx-4 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mr-4 {
+  margin-right: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.ml-4 {
+  margin-left: 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.mx-5 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mr-5 {
+  margin-right: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+/* ==================CONTAINER STYLE=================== */
+.container {
+  width: 100%;
+}
+
+.container-sm {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+}
+
+.container-md {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+.container-lg {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+.container-lg {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8rem;
+}
+
+
+/* ==================BUTTON STYLE=================== */
+.btn {
+  font-size: var(--btn-text);
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  font-weight: var(--fw-medium);
+}
+
+.btn-sm{
+  padding: .4rem 1.4rem;
+  font-size: var(--body-text);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-circle {
+  width: 55px;
+  height: 55px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background: none;
+}
+
+.btn-circle i {
+  font-size: var(--icon-md);
+  color: var(--dark);
+}
+
+.btn-circle-sm {
+  width: 45px;
+  height: 45px;
+}
+
+.btn-circle-sm i {
+  font-size: var(--icon-sm);
+  color: var(--dark);
+}
+
+.btn-circle-xs {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-circle-xs i {
+  font-size: var(--icon-sm);
+  color: var(--dark);
+}
+
+
+.btn-outline-secondary {
+  border: 1px solid var(--secondary-light);
+}
+
+.btn-icon-right i {
+  margin-left: .3rem;
+  font-size: var(--icon-btn);
+}
+
+.btn-icon-left i {
+  margin-right: .3rem;
+  font-size: var(--icon-btn);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--light);
+  transition: .3s ease;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: var(--primary-alt);
+  transition: .3s ease;
+}
+
+.btn-primary:disabled {
+  background-color: var(--primary-disabled);
+  transition: .3s ease;
+}
+
+/* ==================CARD=================== */
+.card {
+  height: auto;
+  border-radius: 1rem;
+}
+
+.card-light {
+  background-color: var(--light);
+}
+
+.card-secondary {
+  background-color: var(--secondary-superlight);
+}
+
+.card-body {
+  box-sizing: border-box;
+  padding: 1.3rem;
+}
+
+/* ==================HTML STYLE=================== */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}

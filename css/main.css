@@ -1,0 +1,143 @@
+@import url("config.css");
+
+/* ====================================THUMBNAIL================================= */
+.full-screen-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail-img {
+  width: 40vh;
+  height: auto;
+}
+
+.thumbnail-title {
+  font-size: var(--h3);
+}
+
+.icon-thumbnail {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: var(--icon-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  transform: rotate(20deg);
+  color: var(--light);
+  margin: 0 .5rem;
+}
+
+/* ====================================TOP NAV================================= */
+.top-nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.top-nav-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  background-color: var(--light);
+}
+
+.top-nav-data {
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid var(--secondary-light);
+  padding: 6px;
+}
+
+.top-nav-img-container {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.top-nav-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-nav-btns button {
+  margin-left: .5rem;
+}
+
+.top-nav-link {
+  margin-left: 0.3rem;
+  font-size: var(--body-text);
+  font-weight: var(--fw-semi-bold);
+}
+
+/* ====================================JOB TYPE================================= */
+.job-type-container {
+  margin-top: 6rem;
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+.job-type {
+  display: flex;
+  overflow: scroll;
+}
+
+.job-type::-webkit-scrollbar {
+  display: none;
+}
+
+.card-job-type {
+  margin-right: 1rem;
+  min-width: 30%;
+}
+
+.card-job-type:last-child {
+  margin-right: 0;
+}
+
+/* ====================================JOB MATCHED================================= */
+.job-match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-match-header-item {
+  display: flex;
+  align-items: center;
+}
+
+.job-matched-header-img-container {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.job-matched-img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
